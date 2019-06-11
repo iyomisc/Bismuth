@@ -52,7 +52,7 @@ class Keys:
 
 
 # Wallet needs a version for itself
-__version__ = '0.8.3'
+__version__ = '0.8.4'
 
 # upgrade wallet location after nuitka-required "files" folder introduction
 if os.path.exists("../wallet.der") and not os.path.exists("wallet.der") and "Windows" in platform.system():
@@ -68,7 +68,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolb
 matplotlib.use('TkAgg')
 from matplotlib.figure import Figure3
 """
-# import keys
+
 
 class Wallet():
     def __init__(self):
@@ -92,7 +92,6 @@ def mempool_clear(s):
 
 def mempool_get(s):
     # result = [['1524749959.44', '2ac10094cc1d3dd2375f8e1aa51115afd33926e3fa69472f2ea987f5', 'edf2d63cdf0b6275ead22c9e6d66aa8ea31dc0ccb367fad2e7c08a25', '11.15000000', 'rd7Op7gZlp7bBkdL5EogrhkHB3WFGNKfc2cGqzrKzwtFCJf/3nKt13y/1MggR5ioA1RAHFn/8m5q+ot7nv6bTcAOhXHgK/CcqplNBNEp3J+RFf1IbEbhbckJsdVbRvrkQoMRZmSrwCwJm+v/pB9KYqG3R5OVKmEyc5KbUZsRuTUrZjPL6lPd+VfYy6x2Wnr5JgC+q7zvQPH0+yqVqOxcbgYggbbNyHHfYIj+0k0uK+8hwmRCe+SfG+/JZwiSp8ZO4Teyd6/NDmss0AaDRYfAVmxLMEg0aOf1xPbURL3D9gyUsDWupRFVT88eS22cRTPgvS5fwpPt/rV8QUa58eRHSMJ3MDwxpkJ7KeMkN5dfiQ/NZ0HFQc3vDwnGJ1ybyVDnw/i7ioRsJtTC0hGNO33lNVqKnbQ8yQ/7yihqfUsCM1qXA/a5Q+9bRx1mr0ff+h7BYxK7qoVF/2KeiS7Ia8OiX8EPUSiwFxCnGsY+Ie+AgQlaiUIlen2LoGw41NGmZufvWXFqK9ww8e50n35OmKw0MQrJrzOr/7iBoCOXmW0/jEzbJNM7NKEni7iFNwbfk3Xzkoh8A2/m9hdDPKZASdF1hFpNVnGJnDvuINRNn3xBUqoxCQUY50b9mGO4hdkLgVOQOVvzYvdYjB0B+XJTvmfLtWQKOcAJ4/E7tr8dSrC7sPY=', 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE0SjdSS2VPWGN2OXhaTGN6R2IvSQprV2MvanU3cktvLzIrNGJuS0NsQituT0VwNDY5Vzd5YmF3eW1mR2xVUmpvYjg3MjZ6eWFDdDVrOEJqNXU1Y25MCk1XaENueGNwdGltUytmeHA1WGx5NGs5TUNQUDlYODZFc1U0ZjBrcVBhZjhnais1MG5LdjM4a01ZMHFSR0k0U0QKNS9wVlpCY1ptRjN0eVFPYzh0SWJERk9vUHJta0FpTy9LQnAxWHA4Q0dFK24zaTdKdS9zUFlzcDZFRERobjVrVAptVDMxUGVOZ2tUOTh4OW5rSmhSTmxmQTE2Mi9ia2gva2JISE1hUE1JYUhsUDhSbGVNazlqS0hCNjVOWFVMVHNLCjZZa2FNK2F3aGVpUWIwVDE2cm5tY3N4NHZBbWViUEFBWTQ1WWNqMWx3L3lpU0ZXWWpvdkcrQjBkZ0JuTDVXbUUKb2d6bnQxN04zYzZnU1JBNEYrUUhrVlA1RjBUejdTSXFuWnZDeCtEMDhjam9hVWgxUi9SeFNlT1Mwd3pEdWdNOQpMZjhSQXZweVRxR0xmUWpYY252YnVaMGNBc1g4SzFCR3lvTDZIZ3h2U3kzeUJBMlZvSjlnM1JncVUxU3NraHgrCktsdlg0S0VWeXUxLzlMbXRpc3dKSFZGTitEdVhTV1VqMjk0RURsZktsTlRKY0h1LytQWHFyeGVzbkpjOGttYisKWVlYS0R3YnRKNDFRMnRZalBwd1BOSmpDdm1Ca2haSzR2VEFIQXNKVTVEV1pQZkRJeEN6WDVFbFFRUGNhVUV6MApvbnAzNDVpeVV0TFZZcmdIdTJCNmIvNkNqMWlCNm90SitNV1RUYXVOUHcrYXczeVRHK1NUM3dxeG5qS3I3YkoyCnJGVkFnUFBCRlI5cmVoUUpmTXBoTGtVQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '0', '672ce4daaeb73565'], ['1524749904.95', '4edadac9093d9326ee4b17f869b14f1a2534f96f9c5d7b48dc9acaed', '4edadac9093d9326ee4b17f869b14f1a2534f96f9c5d7b48dc9acaed', '0.00000000', 'bQmnTD79aL1hjoyVF/ARfMLFfMtQiqpmvk88fPAGW1LUqLQen87+6i+2flBCuSPOWvjHQBMJ3Ctyk5MtuWj6KtoltWSKXev2tYfgNSiAOuo1YIbUhDwTBtHI5UY6X9eNmFjB5Iny0/7VB+cotV1ZBPpgCx1xQn45CtAVk4IYaXc=', 'LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlHZk1BMEdDU3FHU0liM0RRRUJBUVVBQTRHTkFEQ0JpUUtCZ1FES3ZMVGJEeDg1YTF1Z2IvNnhNTWhWT3E2VQoyR2VZVDgrSXEyejlGd0lNUjQwbDJ0dEdxTks3dmFyTmNjRkxJdThLbjRvZ0RRczNXU1dRQ3hOa2haaC9GcXpGCllZYTMvSXRQUGZ6clhxZ2Fqd0Q4cTRadDRZbWp0OCsyQmtJbVBqakZOa3VUUUl6Mkl1M3lGcU9JeExkak13N24KVVZ1OXRGUGlVa0QwVm5EUExRSURBUUFCCi0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==', '0', '']]
-
     mempool_window = Toplevel()
     mempool_window.title("Mempool")
 
@@ -104,7 +103,6 @@ def mempool_get(s):
         # mp_tree.grid(row=0, column=0)
 
         # table
-
         mp_tree.heading("#0", text='time')
         mp_tree.column("#0", anchor='center', width=100)
 
@@ -133,7 +131,6 @@ def mempool_get(s):
             # global frame_chart
             root.after(0, update())
             root.after(10000, refresh_mp_auto)
-
         except Exception as e:
             print("Mempool window closed, disabling auto-refresh ({})".format(e))
 
@@ -183,9 +180,9 @@ def convert_ip_port(ip):
     :param some_port: default port
     :return: (ip, port)
     """
+    port = 5658  # default
     if ':' in ip:
         ip, port = ip.split(':')
-
     return ip, port
 
 def node_connect():
@@ -311,14 +308,11 @@ def all_spend_check():
 
 def fingerprint():
     root.filename = filedialog.askopenfilename(multiple=True, initialdir="", title="Select files for fingerprinting")
-
     dict = {}
-
     for file in root.filename:
         with open(file, 'rb') as fp:
             data = hashlib.blake2b(fp.read()).hexdigest()
             dict[os.path.split(file)[-1]] = data
-
     openfield.insert(INSERT, dict)
 
 
@@ -359,17 +353,12 @@ def keys_load_dialog():
     t.start()
 
 
-
-
 def keys_backup():
     root.filename = filedialog.asksaveasfilename(initialdir="", title="Select backup file")
-
     if not root.filename == "":
         if not root.filename.endswith(".tar.gz"):
             root.filename = root.filename + ".tar.gz"
-
         der_files = glob.glob("*.der")
-
         tar = tarfile.open(root.filename, "w:gz")
         for der_file in der_files:
             tar.add(der_file, arcname=der_file)
@@ -522,11 +511,8 @@ def encrypt_fn(destroy_this):
             ciphertext = encrypt(password, keyring.private_key_readable)
             ciphertext_export = base64.b64encode(ciphertext).decode()
             essentials.keys_save(ciphertext_export, keyring.public_key_readable, keyring.myaddress, keyring.keyfile)
-
             # encrypt_b.configure(text="Encrypted", state=DISABLED)
-
             keyring.key, keyring.public_key_readable, keyring.private_key_readable, keyring.encrypted, keyring.unlocked, keyring.public_key_hashed, keyring.myaddress, keyring.keyfile = essentials.keys_load_new(keyring.keyfile.name)
-
             encryption_button_refresh()
         finally:
             notbusy(destroy_this)
@@ -575,7 +561,6 @@ def decrypt_fn(destroy_this):
 
 def send_confirm(amount_input, recipient_input, operation_input, openfield_input):
     amount_input = quantize_eight(amount_input)
-
     # Exchange check
     exchange_addresses = {
         "f6c0363ca1c5aa28cc584252e65a63998493ff0a5ec1bb16beda9bac": "qTrade",
@@ -662,10 +647,6 @@ def send(amount_input, recipient_input, operation_input, openfield_input):
     except:
         messagebox.showerror("Invalid Amount", "Amount must be a number")
 
-    # alias check
-
-    # alias check
-
     if not address_validate(recipient_input):
         messagebox.showerror("Invalid Address", "Invalid address format")
     else:
@@ -686,13 +667,9 @@ def send(amount_input, recipient_input, operation_input, openfield_input):
         verifier = PKCS1_v1_5.new(keyring.key)
 
         if verifier.verify(h, signature):
-
             app_log.warning("Client: The signature is valid, proceeding to save transaction, signature, new txhash and the public key to mempool")
-
             # print(str(timestamp), str(address), str(recipient_input), '%.8f' % float(amount_input),str(signature_enc), str(public_key_hashed), str(keep_input), str(openfield_input))
             tx_submit = str(tx_timestamp), str(keyring.myaddress), str(recipient_input), '%.8f' % float(amount_input), str(signature_enc.decode("utf-8")), str(keyring.public_key_hashed.decode("utf-8")), str(operation_input), str(openfield_input)  # float kept for compatibility
-
-
             try:
                 connections.send(wallet.s, "mpinsert")
                 connections.send(wallet.s, tx_submit)
@@ -705,18 +682,12 @@ def send(amount_input, recipient_input, operation_input, openfield_input):
             except Exception as e:
                 messagebox.showerror(f"Error, {e}")
                 pass
-
             t = threading.Thread(target=refresh, args=(gui_address_t.get(),))
             t.start()
 
         else:
             app_log.warning("Client: Invalid signature")
         # enter transaction end
-
-
-# def app_quit():
-#    app_log.warning("Received quit command")
-#    root.destroy()
 
 
 def qr(address):
@@ -794,7 +765,6 @@ def msg_dialogue(address):
                     except:
                         msg_received_digest = "Could not decrypt message"
 
-
                 elif x[11].startswith("bmsg="):
                     msg_received_digest = replace_regex(x[11], "bmsg=")
                     try:
@@ -832,7 +802,6 @@ def msg_dialogue(address):
 
                     except:
                         msg_sent_digest = "Could not decrypt message"
-
 
                 elif x[11].startswith("enc=bmsg="):
                     msg_sent_digest = replace_regex(x[11], "enc=bmsg=")
@@ -879,15 +848,12 @@ def msg_dialogue(address):
 
     dismiss = Button(top11, text="Dismiss", command=top11.destroy)
     dismiss.grid(row=5, column=0, sticky=W + E, padx=15, pady=(5, 5))
-
     # popup
 
 
 def refresh_auto():
     t = threading.Thread(target=refresh, args=(gui_address_t.get(),))
     root.after(0, t.start())
-
-
     root.after(30000, refresh_auto)
 
 
@@ -1097,28 +1063,30 @@ def csv_export(s):
 def token_transfer(token, amount, window):
     operation.delete(0, END)
     operation.insert(0, "token:transfer")
-
     openfield.delete('1.0', END)  # remove previous
     openfield.insert(INSERT, "{}:{}".format(token, amount))
     window.destroy()
-
     send_confirm(0, recipient.get(), "token:transfer", "{}:{}".format(token, amount))
 
 
 def token_issue(token, amount, window):
     operation.delete(0, END)
     operation.insert(0, "token:issue")
-
     openfield.delete('1.0', END)  # remove previous
     openfield.insert(INSERT, "{}:{}".format(token, amount))
     recipient.delete(0, END)
     recipient.insert(INSERT, keyring.myaddress)
     window.destroy()
-
     send_confirm(0, recipient.get(), "token:issue", "{}:{}".format(token, amount))
 
 
 def tokens():
+    # callback
+    def callback(event):
+        token_select = (token_box.get(token_box.curselection()[0]))
+        token_name_var.set(token_select[0])
+        token_amount_var.set(token_select[2])
+
     tokens_main = Frame(tab_tokens, relief='ridge', borderwidth=0)
     tokens_main.grid(row=0, column=0, pady=5, padx=5, sticky=N + W + E + S)
     # tokens_main.title ("Tokens")
@@ -1134,26 +1102,14 @@ def tokens():
         connections.send(wallet.s, gui_address_t.get())
         tokens_results = connections.receive(wallet.s)
         print(tokens_results)
-
         for pair in tokens_results:
-
             token = pair[0]
             balance = pair[1]
             token_box.insert(END, (token, ":", balance))
-
     except Exception as e:
         messagebox.showerror("Error", f"There was an issue fetching tokens {e}")
-        pass
-
-    # callback
-    def callback(event):
-        token_select = (token_box.get(token_box.curselection()[0]))
-        token_name_var.set(token_select[0])
-        token_amount_var.set(token_select[2])
 
     token_box.bind('<Double-1>', callback)
-
-    # callback
 
     token_name_var = StringVar()
     token_name = Entry(tokens_main, textvariable=token_name_var, width=80)
@@ -1187,8 +1143,6 @@ def tokens():
 
 
 def tx_tree_define():
-
-
     wallet.tx_tree = ttk.Treeview(tab_transactions, selectmode="extended", columns=('sender', 'recipient', 'amount', 'type'), height=20)
     wallet.tx_tree.grid(row=1, column=0)
 
@@ -1282,8 +1236,6 @@ def table(address, addlist_20, mempool_total):
         wallet.tx_tree.tag_configure("received", background='palegreen1')
         wallet.tx_tree.tag_configure("sent", background='chocolate1')
 
-    # table
-
 
 def refresh(address, raise_errors=False):
 
@@ -1299,7 +1251,6 @@ def refresh(address, raise_errors=False):
         server_timestamp_var.set("GMT: {}".format(time.strftime("%H:%M:%S", time.gmtime(int(float(wallet.stats_timestamp))))))
 
         # data for charts
-
         """
         block_height = statusget[8][7]  # move chart only if the block height changes, returned from diff 7
         try:
@@ -1367,7 +1318,6 @@ def refresh(address, raise_errors=False):
             sync_msg_label.config(fg='green')
 
         # network status
-
         connections.send(s, "mpget")  # senders
         wallet.mempool_total = connections.receive(s)
         print(wallet.mempool_total)
@@ -1419,17 +1369,14 @@ def refresh(address, raise_errors=False):
         # photo_main.resize (width_main,height_main)
 
         # canvas bg
-
         connections.send(s, "annget")
         annget = connections.receive(s)
-
         ann_var_text.config(state=NORMAL)
         ann_var_text.delete('1.0', END)
         ann_var_text.insert(INSERT, annget)
         ann_var_text.config(state=DISABLED)
 
         all_spend_check()
-
 
     except Exception as e:
         app_log.warning(e)
@@ -1701,8 +1648,7 @@ if __name__ == "__main__":
     light_ip = get_best_ipport_to_use(light_ip_conf)
     # light_ip.insert(0,node_ip)
     # light_ip = "127.0.0.1:8150"
-
-    print(light_ip)
+    print(f"Connectiong to {light_ip}")
 
     root = Tk()
 
@@ -1820,9 +1766,6 @@ if __name__ == "__main__":
 
     nbtabs.bind('<<NotebookTabChanged>>', click_on_tab_tokens)
 
-    # frames
-    # menu
-
     # canvas
     menubar = Menu(root)
     walletmenu = Menu(menubar, tearoff=0)
@@ -1904,14 +1847,10 @@ if __name__ == "__main__":
     resolve = Checkbutton(frame_entries_t, text="Aliases", variable=resolve_var, command=lambda: refresh(gui_address_t.get()), width=14, anchor=W)
     resolve.grid(row=0, column=5, sticky=W)
 
-    # canvas
-
     # display the menu
     root.config(menu=menubar)
-    # menu
 
     # buttons
-
     send_b = Button(frame_send, text="Send Bismuth", command=lambda: send_confirm(str(amount.get()).strip(), recipient.get().strip(), operation.get().strip(), (openfield.get("1.0", END)).strip()), height=2, width=22, font=("Tahoma", 12))
     send_b.grid(row=0, column=0)
 

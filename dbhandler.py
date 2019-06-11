@@ -56,7 +56,6 @@ class DbHandler:
         self.conn.text_factory = str
         self.c = self.conn.cursor()
 
-
         self.SQL_TO_TRANSACTIONS = "INSERT INTO transactions VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"
         self.SQL_TO_MISC = "INSERT INTO misc VALUES (?,?)"
 
@@ -196,6 +195,11 @@ class DbHandler:
 
         self.h2.execute("DELETE FROM misc WHERE block_height >= ?", (block_height,))
         self.commit(self.hdd2)
+
+    def rollback_to(self, block_height):
+        # We don'tt need node to have the logger
+        self.logger.app_log.error("rollback_to is deprecated, use rollback_under")
+        self.rollback_under(block_height)
 
     def tokens_rollback(self, node, height):
         """Rollback Token index
